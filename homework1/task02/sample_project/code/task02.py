@@ -9,17 +9,21 @@ We guarantee, that the given sequence contain >= 0 integers inside.
 from typing import Sequence
 from homework1.task01.sample_project.calculator.calc import check_power_of_2
 
+
 def check_fibonacci(data: Sequence[int]) -> bool:
     t = true
     for d in data:
-        a = check_power_of_2(5*d**2+4)
-        b = check_power_of_2(5*d**2-4)
-        if a or b:
-            t = t and True
+        if d <0:
+            return False
         else:
-            t = t and False
+            a = check_power_of_2(5*d**2+4)
+            b = check_power_of_2(5*d**2-4)
+            if a or b:
+                t = t and True
+            else:
+                t = t and False
     return t
-credits
+
 
 
 
