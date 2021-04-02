@@ -12,7 +12,7 @@ from code.subseq import find_maximal_subarray_sum
 )
 
 def test_maximal_subarray_sum(value: tuple, expected_result: bool):
-    actual_result = check_power_of_2(value)
+    actual_result = find_maximal_subarray_sum(value)
 
     assert actual_result == expected_result
 
