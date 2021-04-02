@@ -1,4 +1,4 @@
-import calc
+import sum
 
 if __name__ == "main":
-    calc.check_power_of_2(15)
+    sum.check_sum_of_four([1],[2],[3],[4])

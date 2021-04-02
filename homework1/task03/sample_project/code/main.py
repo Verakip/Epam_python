@@ -1,4 +1,4 @@
-import calc
+import seq
 
 if __name__ == "main":
-    calc.check_power_of_2(15)
+    seq.find_maximum_and_minimum('seq.txt')

@@ -1,16 +1,24 @@
-def check_power_of_2(a: int) -> bool:
-    if type(a) in [float, str]:
-        print('Введите целое число')
-        return False
-    elif a < 0:
-        print('Введите положительное число')
-        return False
-    else:
-        sq_a = int(a**0.5)
-        new_a = sq_a ** 2
-        return a == new_a
+"""
+Classic task, a kind of walnut for you
+Given four lists A, B, C, D of integer values,
+    compute how many tuples (i, j, k, l) there are such that A[i] + B[j] + C[k] + D[l] is zero.
+We guarantee, that all A, B, C, D have same length of N where 0 ≤ N ≤ 1000.
+"""
+from typing import List
 
-    #not (bool(a & (a - 1)))
+
+def check_sum_of_four(a: List[int], b: List[int], c: List[int], d: List[int]) -> int:
+    s=0
+    N=len(a)
+    for i in range(N):
+        for j in range(N):
+            for k in range(N):
+                for l in range(N):
+                    if a[i]+b[j]+c[k]+d[l] == 0:
+                        s += 1
+    return s
+
+
 
 
 

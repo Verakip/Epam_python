@@ -1,4 +1,4 @@
-import calc
+import subseq
 
 if __name__ == "main":
-    calc.check_power_of_2(15)
+    subseq.find_maximal_subarray_sum([1,2,3],2)
