@@ -11,7 +11,7 @@ from code.seq import find_maximum_and_minimum
     ],
 )
 
-def test_maximum_and_minimum(value: int, expected_result: bool):
+def test_maximum_and_minimum(value: str, expected_result: bool):
     actual_result = find_maximum_and_minimum(value)
 
     assert actual_result == expected_result

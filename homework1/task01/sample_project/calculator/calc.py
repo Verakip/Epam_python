@@ -10,7 +10,3 @@ def check_power_of_2(a: int) -> bool:
         new_a = sq_a ** 2
         return a == new_a
 
-    #not (bool(a & (a - 1)))
-
-
-

@@ -12,7 +12,7 @@ from code.seq import check_sum_of_four
     ],
 )
 
-def test_sum_of_four(value: int, expected_result: bool):
+def test_sum_of_four(value: tuple, expected_result: bool):
     actual_result = check_sum_of_4(value)
 
     assert actual_result == expected_result
