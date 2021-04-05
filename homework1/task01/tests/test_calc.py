@@ -1,6 +1,7 @@
 import pytest
-
-from  homework1.task01.sample_project.calculator.calc import check_power_of_2
+import sys
+sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
+from homework1.task01.code.calc import check_power_of_2
 #from  calculator.calc import check_power_of_2
 
 @pytest.mark.parametrize(

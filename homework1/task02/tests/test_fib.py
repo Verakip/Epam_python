@@ -1,5 +1,9 @@
+
 import pytest
-from code.fib import check_fibonacci
+import sys
+sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
+from homework1.task02.code.fib import check_fibonacci
+from typing import Sequence
 
 
 

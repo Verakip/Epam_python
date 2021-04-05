@@ -1,6 +1,8 @@
 import pytest
 
-from code.subseq import find_maximal_subarray_sum
+import sys
+sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
+from homework1.task05.code.subseq import find_maximal_subarray_sum
 #from homework1.task01.sample_project.calculator.calc import check_power_of_2
 
 
