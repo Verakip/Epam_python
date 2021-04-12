@@ -11,8 +11,4 @@ def find_maximum_and_minimum(file_name: str) -> Tuple[int, int]:
                 mi = int(line)
             elif int(line) > ma:
                 ma = int(line)
-    return(mi,ma)
-
-
-
-
+    return(mi, ma)

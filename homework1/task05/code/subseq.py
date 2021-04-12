@@ -11,25 +11,13 @@ from typing import List
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
     N = len(nums)
-    Ma=max(nums)
-    l = min(k,N)
-    for i in range(2,l+1):
+    Ma = max(nums)
+    min_kN = min(k, N)
+    for i in range(2, min_kN + 1):
         for j in range(N-i+1):
-            s=0
+            s = 0
             for k in range(i):
                 s = s + nums[j + k]
             if s > Ma:
                 Ma = s
     return Ma
-
-
-
-
-
-
-
-
-
-
-
-
