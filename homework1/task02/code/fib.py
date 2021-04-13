@@ -7,12 +7,9 @@ We guarantee, that the given sequence contain >= 0 integers inside.
 
 """
 from typing import Sequence
-import sys
-#sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
+# import sys
+# sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
 from homework1.task01.code.calc import check_power_of_2
-#from .Users.Vera_Kipiatkova.Documents.GitHub.Epam_python.homework1.task01.code.calc import check_power_of_2
-
-#from code.calc import check_power_of_2
 
 
 def check_fibonacci(data: Sequence[int]) -> bool:
@@ -28,4 +25,3 @@ def check_fibonacci(data: Sequence[int]) -> bool:
             else:
                 t = t and False
     return t
-print('7')

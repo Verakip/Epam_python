@@ -1,7 +1,7 @@
 import pytest
-import sys
+# import sys
 from typing import Sequence
-sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
+# sys.path.append('C:/Users/Vera_Kipiatkova/Documents/GitHub/Epam_python')
 from homework1.task02.code.fib import check_fibonacci
 
 
