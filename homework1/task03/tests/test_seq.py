@@ -8,7 +8,7 @@ from homework1.task03.code.seq import find_maximum_and_minimum
 @pytest.mark.parametrize(
     ["value", "expected_result"],
     [
-        ('seq.txt', [1, 7])
+        ('homework1/task03/code/seq.txt', [1, 7])
     ],
 )
 def test_maximum_and_minimum(value: str, expected_result: bool):

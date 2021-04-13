@@ -8,7 +8,7 @@ from homework1.task04.code.sum import check_sum_of_4
 @pytest.mark.parametrize(
     ["value", "expected_result"],
     [
-        ([1, 0], [0, 1], [1, 0], [0, 1], 1)
+        (([1, 0], [0, 1], [1, 0], [0, 1]), 1)
     ],
 )
 def test_sum_of_four(value: tuple, expected_result: bool):
