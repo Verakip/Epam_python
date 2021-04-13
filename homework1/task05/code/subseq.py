@@ -7,17 +7,21 @@ Examples:
     result = 16
 """
 from typing import List
+from itertools import islice
 
 
 def find_maximal_subarray_sum(nums: List[int], k: int) -> int:
-    N = len(nums)
+    """
+    находим максимальную сумму подмассив длины, не превышающей k
+    """
+    Len_of_list = len(nums)
     Ma = max(nums)
-    min_kN = min(k, N)
-    for i in range(2, min_kN + 1):
-        for j in range(N-i+1):
-            s = 0
-            for k in range(i):
-                s = s + nums[j + k]
-            if s > Ma:
-                Ma = s
+    min_kN = min(k, Len_of_list)
+    for k in range(2, min_kN + 1):
+        for i in range(Len_of_list-k+1):
+            sub_nums = list(islice(nums, i, i + k))
+            summa = sum(sub_nums)
+            if summa > Ma:
+                Ma = summa
+
     return Ma

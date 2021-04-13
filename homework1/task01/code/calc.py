@@ -1,4 +1,5 @@
 def check_power_of_2(a: int) -> bool:
+    """Проверяет, является ли заданное число квадратом"""
     if type(a) in [float, str]:
         print('Введите целое число')
         return False

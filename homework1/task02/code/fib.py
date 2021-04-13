@@ -13,6 +13,10 @@ from homework1.task01.code.calc import check_power_of_2
 
 
 def check_fibonacci(data: Sequence[int]) -> bool:
+    """
+    Эта функция проверяет, является ли последовательность
+    частью последовательности Фибоначчи
+    """
     f_2 = data[0]
     a = check_power_of_2(5*f_2**2 + 4)
     if a:
@@ -22,7 +26,6 @@ def check_fibonacci(data: Sequence[int]) -> bool:
         s = int(b ** 0.5)
     if a or b:
         t = True
-        n = 2
         f_1 = data[1]
         if f_1 != int((f_2 + s)/2):
             t = False

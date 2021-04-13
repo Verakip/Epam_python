@@ -11,5 +11,8 @@ from homework1.task05.code.subseq import find_maximal_subarray_sum
     ],
 )
 def test_maximal_subarray_sum(value: list, k: int, expected_result: int):
+    """
+    тест-функция для выбора подмассива длины к с максимальной суммой
+    """
     actual_result = find_maximal_subarray_sum(value, k)
     assert actual_result == expected_result
