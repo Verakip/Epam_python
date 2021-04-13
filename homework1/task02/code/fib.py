@@ -13,15 +13,26 @@ from homework1.task01.code.calc import check_power_of_2
 
 
 def check_fibonacci(data: Sequence[int]) -> bool:
-    t = True
-    for d in data:
-        if d < 0:
-            return False
-        else:
-            a = check_power_of_2(5*d**2 + 4)
-            b = check_power_of_2(5*d**2 - 4)
-            if a or b:
-                t = t and True
-            else:
-                t = t and False
+    f_2 = data[0]
+    a = check_power_of_2(5*f_2**2 + 4)
+    if a:
+        s = int(a ** 0.5)
+    b = check_power_of_2(5*f_2**2 - 4)
+    if b:
+        s = int(b ** 0.5)
+    if a or b:
+        t = True
+        n = 2
+        f_1 = data[1]
+        if f_1 != int((f_2 + s)/2):
+            t = False
+        if t:
+            for f in data[2:]:
+                if f == f_1 + f_2:
+                    f_2, f_1 = f_1, f
+                else:
+                    t = False
+                    break
+    else:
+        t = False
     return t
